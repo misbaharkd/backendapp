@@ -52,10 +52,15 @@ Deployment
 Clone Repository:
 
 bash
+
 Copy code
+
 git clone https://github.com/your/repo.git
+
 cd repo
+
 Modify Kubernetes Manifests:
+
 Update deployment.yaml and service.yaml as per your app requirements.
 
 Configure Jenkins:
