@@ -1,8 +1,8 @@
-** Backend Deployment for Python Flask App on Azure AKS **
+## Backend Deployment for Python Flask App on Azure AKS 
 
 This repository contains configurations and scripts to deploy a Python Flask application on Azure Kubernetes Service (AKS) using Jenkins for CI/CD.
 
-Prerequisites
+# Prerequisites
 
 Before you begin, ensure you have the following installed/configured:
 
@@ -30,7 +30,7 @@ Add credentials for Docker registry (ACR).
 
 Create Jenkins Pipeline (Jenkinsfile):
 
-Kubernetes Manifests
+# Kubernetes Manifests
 
 Deployment:
 
@@ -51,7 +51,7 @@ AKS Cluster setup with required node pools.
 
 ACR for storing Docker images.
 
-Deployment
+# Deployment
 
 Clone Repository:
 
