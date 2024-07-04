@@ -29,40 +29,6 @@ Add credentials for Docker registry (ACR).
 
 Create Jenkins Pipeline (Jenkinsfile):
 
-Example Jenkinsfile to build, test, and deploy:
-
-
-pipeline {
-    agent any
-
-    stages {
-        stage('Checkout') {
-            steps {
-                checkout scm
-            }
-        }
-
-        stage('Build and Push Docker Image') {
-            steps {
-                script {
-                    docker.build("your-image-name:latest")
-                    docker.withRegistry('https://your-acr.azurecr.io', 'acr-credentials') {
-                        docker.image("your-image-name:latest").push()
-                    }
-                }
-            }
-        }
-
-        stage('Deploy to AKS') {
-            steps {
-                script {
-                    sh "kubectl apply -f kubernetes-manifests/"
-                }
-            }
-        }
-    }
-}
-
 Kubernetes Manifests
 
 Deployment:
