@@ -31,8 +31,7 @@ Create Jenkins Pipeline (Jenkinsfile):
 
 Example Jenkinsfile to build, test, and deploy:
 
-groovy
-Copy code
+
 pipeline {
     agent any
 
